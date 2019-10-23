@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <!-- logo -->
+    <a routerLink="/listConseillers" class="navbar-brand">Proxibanque
+      <img src="assets/img/logofeuille.png" width="30" height="30" class="d-inline-block align-top"><br>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav justify-content-between">
+        <!-- Ajout des router Link -->
+        <a class="nav-item nav-link" routerLink="/listConseillers/createConseiller">Ajouter conseiller<img class="ml-2" src="assets/img/add.png" width="20" height="20"></a>
+        <a class="nav-item nav-link" routerLink="/alertGerant" >
+          <div *ngIf="notification">Alert
+          <img    class="ml-2" src="assets/img/alert.png" width="25" height="25">
+        </div>
+        </a>
+        <a class="nav-item nav-link" routerLink="/histo">Rapport Transactions<img class="ml-2" src="assets/img/diagramme.png" width="20" height="20"></a>
+        
+      </div>
+    </div>
+      <div class="pull-right">
+          <!-- Ajout des router Link -->
+          <a class="nav-item nav-link" (click)="logout()"><img class="mr-2" src="assets/img/exit.png" width="20" height="20">Logout</a>
+
+        </div>
+  </nav>

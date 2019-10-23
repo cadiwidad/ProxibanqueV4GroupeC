@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.jit.proxiBanqueV4"},{"l":"com.jit.proxiBanqueV4.dao"},{"l":"com.jit.proxiBanqueV4.entites"},{"l":"com.jit.proxiBanqueV4.metier"},{"l":"com.jit.proxiBanqueV4.services"},{"l":"ma.jit.proxibankv4"}]

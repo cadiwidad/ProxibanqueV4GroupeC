@@ -1,0 +1,52 @@
+<!-- Header -->
+<app-header></app-header>
+
+<!-- Formulaire client -->
+
+<h1 class="h4 col-sm-4 mb-4 mt-5 offset-sm-1"><u>Nouveau client:</u></h1>
+
+
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+  <div class="container bg-light border border-dark py-5">
+     
+    <div class="form-group row">
+      <label class="control-label col-sm-1" for="nom"><strong>Nom</strong></label>
+      <div class="col-sm-3">
+        <input required type="text" ngModel name="nomClient" class="form-control" id="nomClient" placeholder="nom" />
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="control-label col-sm-1" for="prenom"><strong>Prenom</strong></label>
+      <div class="col-sm-3">
+        <input required type="text" ngModel name="prenomClient"  class="form-control" id="prenom" placeholder="prenom">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="control-label col-sm-1" for="adress"><strong>Adresse</strong></label>
+      <div class="col-sm-3">
+        <input required type="text" ngModel name="adresseClient" class="form-control" id="adress"  placeholder="adress">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="control-label col-sm-1" for="email"><strong>Email</strong></label>
+      <div class="col-sm-3">
+        <input required type="email" ngModel name ="emailClient"     class="form-control" id="email"  placeholder="email">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="control-label col-sm-1" for="solde"><strong>solde</strong></label>
+      <div class="col-sm-3">
+        <input required type="number" ngModel name ="solde"     class="form-control" id="solde"  placeholder="solde">
+      </div>
+    </div>
+    
+
+  </div>
+  <div class="form-group">
+    <div class="mt-3  col-sm-3 offset-sm-2 ">
+      <button type="submit" class="btn btn-outline-secondary">valider</button>
+    </div>
+  </div>
+
+</form>

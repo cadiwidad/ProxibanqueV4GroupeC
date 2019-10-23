@@ -1,0 +1,37 @@
+<!-- Header -->
+<app-header></app-header>
+
+<div class="container">
+  <!-- Login Form -->
+  <h1 class="h4 col-sm-4 mb-4 mt-5 offset-sm-1"><u>Liste des clients:</u></h1>
+
+
+  <table class="table table-striped mt-5">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">nom</th>
+        <th scope="col">prenom</th>
+        <th scope="col">adresse</th>
+        <th scope="col">email</th>
+        <th scope="col">actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Boucler sur les éléments du Tableau client-->
+      <tr *ngFor="let client of listeClients; index as i">
+        <th scope="row">{{ client.idClient }}</th>
+        <td>{{client.nomClient}}</td>
+        <td>{{client.prenomClient}}</td>
+        <td>{{client.adresseClient}}</td>
+        <td>{{client.emailClient}}</td>
+        <td class="row mx-md-n2">
+          <a [routerLink]="['/list-clients/edit-client',client.idClient]" class="col px-md-1"><img src="assets/img/editbutton.png" width="30" height="30"></a>
+          <a  (click)="deleteClient(client.idClient)" class="col px-md-1"><img src="assets/img/deleting.png" width="20" height="20"></a>
+          <a [routerLink]="['/list-clients/consulterClient',client.idClient]" class="col px-md-1"><img src="assets/img/find.png" width="20" height="20"></a>
+          <a class="col px-md-1"><img src="assets/img/transfert.png" width="25" height="25"></a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,50 @@
+<!-- Header -->
+<app-header></app-header>
+
+<div class="container">
+  <!-- Login Form -->
+  <h1 class="h4 col-sm-4 mb-4 mt-5 offset-sm-1"><u>Coordonnées Client:</u></h1>
+
+
+  <table class="table table-striped mt-5">
+    <thead>
+      <tr>
+        <th scope="col">Nom</th>
+        <th scope="col">Prenom</th>
+        <th scope="col">Email</th>
+        <th scope="col">Adresse</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Boucler sur les éléments du Tableau client-->
+      <tr *ngFor="let client of client; index as i">
+        <th scope="row">{{ client[0] }}</th>
+        <td>{{client[1]}}</td>
+        <td>{{client[2]}}</td>
+        <td>{{client[3]}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="container">
+    <!-- Login Form -->
+    <h1 class="h4 col-sm-4 mb-4 mt-5 offset-sm-1"><u>Coordonnées Bancaire:</u></h1>
+  
+  
+<table class="table table-striped mt-5">
+    <thead>
+<tr>
+<th scope="col">N° Compte</th>
+<th scope="col">Solde</th>
+<th scope="col">Date Creation</th>
+</tr>
+</thead>
+<tbody>
+    <tr *ngFor="let client of client; index as i">
+<td>{{client[4]}}</td>
+<td>{{client[5]}}</td>
+<td>{{client[6]}}</td>
+</tr>
+</tbody>
+</table>
+</div>
