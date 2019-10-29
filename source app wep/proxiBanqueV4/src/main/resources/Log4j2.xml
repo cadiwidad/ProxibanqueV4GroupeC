@@ -22,12 +22,7 @@
       <AppenderRef ref="File" />
     </Logger>
     
-    <!-- Log toutes les transactions de virement compte à compte -->
-    
-    <Logger name="com.jit.proxiBanqueV4.aspect.LoggerAspect" level="debug" additivity="false">
-      <AppenderRef ref="Console" />
-      <AppenderRef ref="File" />
-    </Logger>
+ 
 
     <!-- Log tout dans Spring Core -->
     

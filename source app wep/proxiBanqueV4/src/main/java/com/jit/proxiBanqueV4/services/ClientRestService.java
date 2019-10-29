@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.jit.proxiBanqueV4.entites.Client;
 import com.jit.proxiBanqueV4.metier.IClientMetier;
-
 @RestController
 public class ClientRestService {
 	@Autowired

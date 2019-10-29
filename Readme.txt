@@ -70,36 +70,26 @@ Pour utiliser ProxiBanqueSI V4.0 :
 
 ======== Installer l'application ========
 
-1) déziper dans un dossier le fichier "ProxiBanqueV4.zip"
-2) ouvrir une console
-3) aller jusqu'au dossier src de proxibanque.
-4) taper : mvn clean package 
-6) puis : target\proxiBanqueV4.war S:\apache-tomcat-9\webapps\ProxiBanqueV4.war
+1) Déziper dans un dossier le fichier "ProxibanqueV4GroupeC-master.zip"
+2) Dans le dossier "source app wep" copier le fichier "proxiBanqueV4.war"
+2) copier "proxiBanqueV4.war" dans le dossier "xampp\tomcat\webapps"
+2) Lancer serveur d'application Tomcat 9 et deployer proxiBanqueV4.war
 
 ======== Créer la base de donnée MySQL ========
 
 1) Ouvrir Xampp
 2) Lancer Apache
 3) Lancer MySQL
-4) Lancer le controle Admin de MySQL sur Xampp
-5) Cliquer sur l'onglet "console" de Xampp
-6) taper : "mysql -u root -p" puis tapez [entrée]
-7) Ouvrir le dossier conception et ouvrez dans un éditeur texte le fichier "proxibanqueversion4.sql"
-8) Copier l'entièreté du fichier
-9) Dans la console, coller le texte copié.
-10) La base de donnée a été crée dans MySQL.
-
+4) Mettez vous sur le lienn "http://localhost/phpmyadmin/"
+5) cliquer sur l'onglet "Importer"
+6) Acceder au dossier "Conception" et selectionner le Fichier "proxibanqueversion4.sql"
+7) Cliquer sur "executer"
 ======== Lancer l'application ========
 
-1) Lancer serveur d'application 
-2)Sur le terminal d'un éditeur de texte (VisualCode) lancez la commande "npm install -g @angular/cli"
-
-3)Ouvrez le dossier FrontEndPBqV4-master dans un éditeur de texte (VisualCode)
-
-4)Lancez la commande npm start
-
-5) Ouvrez un navigateur internet
-6) Tapez dans l'url : http://localhost:4200/
+1) Acceder au dossier "FrontEndPBqV4-master"
+2) ouvrez le fichier dans la console et lancez la commande "npm install" et ensuite la commande "npm start"
+3) Ouvrez un navigateur internet
+4) Tapez dans l'url : http://localhost:4200/
 
 ==================================================================================
 
